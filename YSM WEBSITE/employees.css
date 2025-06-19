@@ -1,0 +1,74 @@
+/* employees.css */
+
+@import 'styles.css';
+@import 'dashboard.css';
+
+.content-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: var(--font-base);
+}
+
+.content-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+  text-align: center;
+}
+
+/* Search bar */
+.search-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#searchInput:focus {
+  outline: none;
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 2px rgba(227, 0, 0, 0.2);
+}
+
+/* Scrollable table wrapper */
+.table-wrapper {
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sticky header */
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+/* Reuse .data-table styling from dashboard */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+}
+.data-table th,
+.data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-border);
+}
+.data-table tbody tr:hover {
+  background: #f9f9f9;
+}
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}

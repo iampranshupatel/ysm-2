@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YSM Onboarding Portal – Employee Directory</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="employees.css" />
+</head>
+<body>
+  <!-- Header (reuse from dashboard) -->
+  <header class="main-header">
+    <div class="header-inner">
+      <img src="https://images.squarespace-cdn.com/content/v1/60d0f01d136dd545ca66a68e/1624392350261-DLO2VNVNZ3F334RAQZ8Y/2+YSM-Corporate-Logo-Red-and-White.jpg" alt="YSM Logo" class="logo-header" />
+      <div class="header-controls">
+        <span id="greeting">Welcome, User</span>
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Employee Directory -->
+  <main class="content-container">
+    <h2>Employee Directory</h2>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by name, role, or department…"
+      />
+    </div>
+
+    <div class="table-wrapper">
+      <table id="employeeTable" class="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Dept.</th>
+            <th>Start Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows injected by employees.js -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="dashboard.js"></script>
+  <script src="employees.js"></script>
+</body>
+</html>

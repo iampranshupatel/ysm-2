@@ -1,0 +1,98 @@
+/* dashboard.css */
+
+/* Import shared variables & resets */
+@import 'styles.css';
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: var(--font-base);
+}
+
+/* ---------- Header ---------- */
+.main-header {
+  background: var(--color-black);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-header {
+  height: 40px;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#greeting {
+  color: var(--color-white);
+  font-weight: 500;
+}
+#logoutBtn {
+  background: transparent;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+#logoutBtn:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* ---------- Dashboard Main ---------- */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.dashboard-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+}
+
+/* Grid of action cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-white);
+  border: 2px solid var(--color-red);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--color-black);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.dashboard-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.dashboard-card p {
+  font-size: 0.95rem;
+  color: #555;
+}

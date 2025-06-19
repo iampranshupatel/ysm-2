@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YSM Onboarding Portal – Onboard Requests</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="onboard.css" />
+</head>
+<body>
+  <!-- Header (reuse from dashboard) -->
+  <header class="main-header">
+    <div class="header-inner">
+      <img src="https://images.squarespace-cdn.com/content/v1/60d0f01d136dd545ca66a68e/1624392350261-DLO2VNVNZ3F334RAQZ8Y/2+YSM-Corporate-Logo-Red-and-White.jpg" alt="YSM Logo" class="logo-header" />
+      <div class="header-controls">
+        <span id="greeting">Welcome, User</span>
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Onboard Requests -->
+  <main class="content-container">
+    <h2>Pending Onboard Requests</h2>
+    <table id="onboardTable" class="data-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Dept.</th>
+          <th>Requested On</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be injected by onboard.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="dashboard.js"></script>
+  <script src="onboard.js"></script>
+</body>
+</html>

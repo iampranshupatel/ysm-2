@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YSM Onboarding Portal – Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <!-- Replace with your actual logo path -->
+      <img src="https://images.squarespace-cdn.com/content/v1/60d0f01d136dd545ca66a68e/1624392350261-DLO2VNVNZ3F334RAQZ8Y/2+YSM-Corporate-Logo-Red-and-White.jpg" alt="YSM Logo" class="logo" />
+
+      <h1>YSM Onboarding Portal</h1>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="role">Role</label>
+          <select id="role" name="role" required>
+            <option value="">Select role…</option>
+            <option value="hr">HR</option>
+            <option value="ist">IS&amp;T</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn primary-btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

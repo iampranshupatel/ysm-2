@@ -1,0 +1,86 @@
+/* onboard.css */
+
+/* Reuse base styles */
+@import 'styles.css';
+@import 'dashboard.css';
+
+.content-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: var(--font-base);
+}
+
+.content-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+  text-align: center;
+}
+
+/* Data Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.data-table thead {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-border);
+}
+
+.data-table th {
+  font-weight: 600;
+}
+
+.data-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* Action Buttons */
+.btn-action {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.btn-approve {
+  background: #28a745;
+  color: var(--color-white);
+}
+
+.btn-approve:hover {
+  background: #218838;
+}
+
+.btn-reject {
+  background: #dc3545;
+  color: var(--color-white);
+}
+
+.btn-reject:hover {
+  background: #c82333;
+}
+
+/* If no requests */
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
